@@ -1,7 +1,7 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libftprintf.a
-SRC = ft_printf.c print.c putnbr.c
+SRC = ft_printf.c libftmpf.c putnbr.c
 
 OBJ = $(SRC:.c=.o)
 AR = ar rc
@@ -21,3 +21,5 @@ fclean : clean
 	rm -rf $(NAME)
 
 re : fclean all
+
+.phony: all clean fclean re
